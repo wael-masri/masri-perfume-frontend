@@ -14,7 +14,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import LocalMallIcon from "@material-ui/icons/LocalMall";
 
 const Navbar = (props) => {
-  const DB = "/";
+  const DB = `${process.env.REACT_APP_URL_BACKEND}/`;
   const lougoutmenu = () => {
     logout();
     localStorage.removeItem("account_masriparfume");
