@@ -32,7 +32,7 @@ const useStyles_card = makeStyles((theme) => ({
 
 
 const Carditem = (props) => {
-  const PF = `${process.env.REACT_APP_URL_BACKEND}/`;
+  const PF = `${process.env.REACT_APP_URL_BACKEND}/api/`;
   const classes_side = useStyles_card();
 
   return (
