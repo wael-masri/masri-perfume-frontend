@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 const Editprofile = (props) => {
   const [file, setFile] = useState(null);
 
-  var DB = "/";
+  var DB = `${process.env.REACT_APP_URL_BACKEND}/`;
   const [dataprof, setDataprof] = useState({
     username: props.location.state.username,
     email: props.location.state.email,
